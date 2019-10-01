@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Diiage2022.Factory_Games.Client.UWP.PageTestCommunication"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Diiage2022.Factory_Games.Client.UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <Button x:Name="buttonCom1" Content="Com 1" Click="ButtonCom1_Click"/>
+        <Button x:Name="buttonCom2" Content="Com 2" Click="ButtonCom2_Click"/>
+        <Button x:Name="buttonCom3" Content="Com 3" Click="ButtonCom3_Click"/>
+        <Button x:Name="buttonCom4" Content="Com 4" Click="ButtonCom4_Click"/>
+        <Button x:Name="buttonCom5" Content="Com 5" Click="ButtonCom5_Click"/>
+        <Button x:Name="buttonCom6" Content="Com 6" Click="ButtonCom6_Click"/>
+        <TextBlock x:Name="txtest" FontSize="50" Text="TESSST" SelectionChanged="Txtest_SelectionChanged"></TextBlock>
+    </StackPanel>
+</Page>

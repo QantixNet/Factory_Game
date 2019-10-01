@@ -1,0 +1,51 @@
+﻿<Page
+    
+    x:Class="Diiage2022.Factory_Games.Client.UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Diiage2022.Factory_Games.Client.UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="907" Width="1655"
+    >
+
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="https://media1.tenor.com/images/9043079ce5982a9bcd5a998f0550534c/tenor.gif?itemid=5972445"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+            <ColumnDefinition Width="3*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+               <TextBox x:Name="textBox_Username" Text="USERNAME" TextWrapping="Wrap" VerticalAlignment="Top" Height="119" Background="#66E6E3E3" Grid.Row="2" Grid.ColumnSpan="3" Margin="334,10,333,0" FontSize="48" HorizontalTextAlignment="Center" TextAlignment="Center"/>
+        <Button x:Name="buttonPlay" Content="Play" Grid.Row="2" Height="191" Width="1645" FontSize="72" Margin="0,111,0,0" VerticalAlignment="Top" FocusVisualPrimaryBrush="{x:Null}" Grid.ColumnSpan="3" Click="ButtonPlay_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF3232" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Popup VerticalOffset="100" HorizontalOffset="350" x:Name="StandardPopup" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <Border BorderBrush="AliceBlue"
+                    Background="Black"
+                    BorderThickness="1">
+                <StackPanel Margin="75" >
+                    <TextBlock x:Name="ErreurName" Foreground="White"></TextBlock>
+
+                    <Button CornerRadius="15" BorderThickness="5" Click="ButtonExit_Click" x:Name="ButtonExit" Width="150" Height="50" BorderBrush="Red" Background="DarkBlue" Margin="0,50,0,0" Foreground="White" HorizontalAlignment="Center" Content="EXIT"></Button>
+
+
+            </StackPanel>
+           </Border>
+        </Popup>
+    </Grid>
+</Page>
